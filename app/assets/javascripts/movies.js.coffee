@@ -10,4 +10,5 @@ $ ->
       dataType: "jsonp"
       url: 'http://www.omdbapi.com?s=' + title
     ).done (data) ->
+      console.log data
       $('.movies').append JST["templates/movies"](movies : data["Search"] || [])
