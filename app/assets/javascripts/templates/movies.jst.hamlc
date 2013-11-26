@@ -1,0 +1,8 @@
+%h5 
+  Movie Results
+
+%ul
+- for movie in @movies
+  %li
+    = movie.Title
+    = "(#{movie.Year})"
